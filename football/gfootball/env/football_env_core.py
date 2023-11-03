@@ -262,9 +262,9 @@ class FootballEnvCore(object):
     if episode_done:
       del self._trace
       self._trace = None
-      fps = 30#self._step_count / (debug['time'] - self._episode_start)
-      print('fps',fps)
-      game_fps = self._step_count / self._steps_time
+      fps = 10#self._step_count / (debug['time'] - self._episode_start)
+      #print('fps',fps)
+      game_fps = 10#self._step_count / self._steps_time
       logging.info(
           'Episode reward: %.2f score: [%d, %d], steps: %d, '
           'FPS: %.1f, gameFPS: %.1f', self._cumulative_reward,

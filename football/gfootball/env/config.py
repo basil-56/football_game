@@ -88,7 +88,7 @@ class Config(object):
     self._values = {
         'action_set': 'default',
         'custom_display_stats': None,
-        'display_game_stats': False,
+        'display_game_stats': True,
         'dump_full_episodes': False,
         'dump_scores': False,
         'players': ['agent:left_players=1'],
@@ -99,7 +99,7 @@ class Config(object):
         'real_time': False,
         'tracesdir': os.path.join(tempfile.gettempdir(), 'dumps'),
         'video_format': 'avi',
-        'video_quality_level': 0,  # 0 - low, 1 - medium, 2 - high
+        'video_quality_level': 2,  # 0 - low, 1 - medium, 2 - high
         'write_video': True
     }
 #    self._values = {

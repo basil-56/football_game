@@ -20,9 +20,9 @@
 from . import *
 
 def build_scenario(builder):
-  builder.config().game_duration = 100#3000   #100 par 7 sec(no rt),11sec(rt)[only playing time...foul time,free kick wait etc time excluded]
-  builder.config().right_team_difficulty = .6#1#100#700#0.05
-  builder.config().left_team_difficulty =.6#1#700#0.05
+  builder.config().game_duration = 1500#100#3000   #100 par 7 sec(no rt),11sec(rt)[only playing time...foul time,free kick wait etc time excluded]
+  builder.config().right_team_difficulty = 2#1#100#700#0.05
+  builder.config().left_team_difficulty =2#1#700#0.05
   builder.config().deterministic = False#True#False
   #if builder.EpisodeNumber() % 2 == 0:
   first_team = Team.e_Left

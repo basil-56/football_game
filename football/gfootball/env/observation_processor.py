@@ -214,6 +214,7 @@ class ActiveDump(object):
     self._video_writer = None
     self._frame_dim = None
     self._step_cnt = 0
+    self._frame_dim = (1280, 720) 
     self._dump_file = None
     if config['write_video']:
       video_format = config['video_format']
